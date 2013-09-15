@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'bt2udp' target in the 'bt2udp' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
