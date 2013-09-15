@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42D8DFA5153E17E0005A9C64 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8DFA4153E17E0005A9C64 /* Cocoa.framework */; };
+		42D8DFAF153E17E0005A9C64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42D8DFAD153E17E0005A9C64 /* InfoPlist.strings */; };
+		42D8DFB1153E17E0005A9C64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D8DFB0153E17E0005A9C64 /* main.m */; };
+		42D8DFB5153E17E0005A9C64 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42D8DFB3153E17E0005A9C64 /* Credits.rtf */; };
+		42D8DFB8153E17E0005A9C64 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42D8DFB7153E17E0005A9C64 /* AppDelegate.mm */; };
+		42D8DFBB153E17E0005A9C64 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D8DFB9153E17E0005A9C64 /* MainMenu.xib */; };
+		42D8DFC3153E17E0005A9C64 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8DFC2153E17E0005A9C64 /* SenTestingKit.framework */; };
+		42D8DFC4153E17E0005A9C64 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8DFA4153E17E0005A9C64 /* Cocoa.framework */; };
+		42D8DFCC153E17E0005A9C64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42D8DFCA153E17E0005A9C64 /* InfoPlist.strings */; };
+		42D8DFCF153E17E0005A9C64 /* bt2udpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D8DFCE153E17E0005A9C64 /* bt2udpTests.m */; };
+		42E7E02D153E310F00852754 /* AMSerialPort_Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7E022153E310F00852754 /* AMSerialPort_Deprecated.m */; };
+		42E7E02E153E310F00852754 /* AMSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7E024153E310F00852754 /* AMSerialPort.m */; };
+		42E7E02F153E310F00852754 /* AMSerialPortAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7E026153E310F00852754 /* AMSerialPortAdditions.m */; };
+		42E7E030153E310F00852754 /* AMSerialPortList_Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7E028153E310F00852754 /* AMSerialPortList_Deprecated.m */; };
+		42E7E031153E310F00852754 /* AMSerialPortList.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7E02A153E310F00852754 /* AMSerialPortList.m */; };
+		42E7E032153E310F00852754 /* AMStandardEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7E02C153E310F00852754 /* AMStandardEnumerator.m */; };
+		42E7E039153F513700852754 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E7E038153F513700852754 /* IOKit.framework */; };
+		42E7E08315404BA300852754 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7E08215404BA300852754 /* GCDAsyncUdpSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42D8DFC5153E17E0005A9C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42D8DF97153E17DF005A9C64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D8DF9F153E17E0005A9C64;
+			remoteInfo = bt2udp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42D8DFA0153E17E0005A9C64 /* serial2udp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = serial2udp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D8DFA4153E17E0005A9C64 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		42D8DFA7153E17E0005A9C64 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		42D8DFA8153E17E0005A9C64 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		42D8DFA9153E17E0005A9C64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42D8DFAC153E17E0005A9C64 /* serial2udp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "serial2udp-Info.plist"; sourceTree = "<group>"; };
+		42D8DFAE153E17E0005A9C64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42D8DFB0153E17E0005A9C64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42D8DFB2153E17E0005A9C64 /* serial2udp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "serial2udp-Prefix.pch"; sourceTree = "<group>"; };
+		42D8DFB4153E17E0005A9C64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		42D8DFB6153E17E0005A9C64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42D8DFB7153E17E0005A9C64 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		42D8DFBA153E17E0005A9C64 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		42D8DFC1153E17E0005A9C64 /* serial2udpTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = serial2udpTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D8DFC2153E17E0005A9C64 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		42D8DFC9153E17E0005A9C64 /* serial2udpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "serial2udpTests-Info.plist"; sourceTree = "<group>"; };
+		42D8DFCB153E17E0005A9C64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42D8DFCD153E17E0005A9C64 /* bt2udpTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bt2udpTests.h; sourceTree = "<group>"; };
+		42D8DFCE153E17E0005A9C64 /* bt2udpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bt2udpTests.m; sourceTree = "<group>"; };
+		42E7E01F153E310F00852754 /* AMSDKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSDKCompatibility.h; sourceTree = "<group>"; };
+		42E7E020153E310F00852754 /* AMSerialErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialErrors.h; sourceTree = "<group>"; };
+		42E7E021153E310F00852754 /* AMSerialPort_Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort_Deprecated.h; sourceTree = "<group>"; };
+		42E7E022153E310F00852754 /* AMSerialPort_Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPort_Deprecated.m; sourceTree = "<group>"; };
+		42E7E023153E310F00852754 /* AMSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort.h; sourceTree = "<group>"; };
+		42E7E024153E310F00852754 /* AMSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPort.m; sourceTree = "<group>"; };
+		42E7E025153E310F00852754 /* AMSerialPortAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortAdditions.h; sourceTree = "<group>"; };
+		42E7E026153E310F00852754 /* AMSerialPortAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortAdditions.m; sourceTree = "<group>"; };
+		42E7E027153E310F00852754 /* AMSerialPortList_Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList_Deprecated.h; sourceTree = "<group>"; };
+		42E7E028153E310F00852754 /* AMSerialPortList_Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList_Deprecated.m; sourceTree = "<group>"; };
+		42E7E029153E310F00852754 /* AMSerialPortList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList.h; sourceTree = "<group>"; };
+		42E7E02A153E310F00852754 /* AMSerialPortList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList.m; sourceTree = "<group>"; };
+		42E7E02B153E310F00852754 /* AMStandardEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardEnumerator.h; sourceTree = "<group>"; };
+		42E7E02C153E310F00852754 /* AMStandardEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStandardEnumerator.m; sourceTree = "<group>"; };
+		42E7E038153F513700852754 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		42E7E08115404BA300852754 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		42E7E08215404BA300852754 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42D8DF9D153E17E0005A9C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E7E039153F513700852754 /* IOKit.framework in Frameworks */,
+				42D8DFA5153E17E0005A9C64 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D8DFBD153E17E0005A9C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D8DFC3153E17E0005A9C64 /* SenTestingKit.framework in Frameworks */,
+				42D8DFC4153E17E0005A9C64 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42D8DF95153E17DF005A9C64 = {
+			isa = PBXGroup;
+			children = (
+				42E7E08415404BAE00852754 /* AsyncUdpSocketClasses */,
+				42E7E01D153E30DC00852754 /* AMSerialPortClasses */,
+				42D8DFAA153E17E0005A9C64 /* bt2udp */,
+				42D8DFC7153E17E0005A9C64 /* bt2udpTests */,
+				42D8DFA3153E17E0005A9C64 /* Frameworks */,
+				42D8DFA1153E17E0005A9C64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42D8DFA1153E17E0005A9C64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42D8DFA0153E17E0005A9C64 /* serial2udp.app */,
+				42D8DFC1153E17E0005A9C64 /* serial2udpTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42D8DFA3153E17E0005A9C64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42E7E038153F513700852754 /* IOKit.framework */,
+				42D8DFA4153E17E0005A9C64 /* Cocoa.framework */,
+				42D8DFC2153E17E0005A9C64 /* SenTestingKit.framework */,
+				42D8DFA6153E17E0005A9C64 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42D8DFA6153E17E0005A9C64 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42D8DFA7153E17E0005A9C64 /* AppKit.framework */,
+				42D8DFA8153E17E0005A9C64 /* CoreData.framework */,
+				42D8DFA9153E17E0005A9C64 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		42D8DFAA153E17E0005A9C64 /* bt2udp */ = {
+			isa = PBXGroup;
+			children = (
+				42D8DFB6153E17E0005A9C64 /* AppDelegate.h */,
+				42D8DFB7153E17E0005A9C64 /* AppDelegate.mm */,
+				42D8DFB9153E17E0005A9C64 /* MainMenu.xib */,
+				42D8DFAB153E17E0005A9C64 /* Supporting Files */,
+			);
+			path = bt2udp;
+			sourceTree = "<group>";
+		};
+		42D8DFAB153E17E0005A9C64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42D8DFAC153E17E0005A9C64 /* serial2udp-Info.plist */,
+				42D8DFAD153E17E0005A9C64 /* InfoPlist.strings */,
+				42D8DFB0153E17E0005A9C64 /* main.m */,
+				42D8DFB2153E17E0005A9C64 /* serial2udp-Prefix.pch */,
+				42D8DFB3153E17E0005A9C64 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42D8DFC7153E17E0005A9C64 /* bt2udpTests */ = {
+			isa = PBXGroup;
+			children = (
+				42D8DFCD153E17E0005A9C64 /* bt2udpTests.h */,
+				42D8DFCE153E17E0005A9C64 /* bt2udpTests.m */,
+				42D8DFC8153E17E0005A9C64 /* Supporting Files */,
+			);
+			path = bt2udpTests;
+			sourceTree = "<group>";
+		};
+		42D8DFC8153E17E0005A9C64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42D8DFC9153E17E0005A9C64 /* serial2udpTests-Info.plist */,
+				42D8DFCA153E17E0005A9C64 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42E7E01D153E30DC00852754 /* AMSerialPortClasses */ = {
+			isa = PBXGroup;
+			children = (
+				42E7E01F153E310F00852754 /* AMSDKCompatibility.h */,
+				42E7E020153E310F00852754 /* AMSerialErrors.h */,
+				42E7E021153E310F00852754 /* AMSerialPort_Deprecated.h */,
+				42E7E022153E310F00852754 /* AMSerialPort_Deprecated.m */,
+				42E7E023153E310F00852754 /* AMSerialPort.h */,
+				42E7E024153E310F00852754 /* AMSerialPort.m */,
+				42E7E025153E310F00852754 /* AMSerialPortAdditions.h */,
+				42E7E026153E310F00852754 /* AMSerialPortAdditions.m */,
+				42E7E027153E310F00852754 /* AMSerialPortList_Deprecated.h */,
+				42E7E028153E310F00852754 /* AMSerialPortList_Deprecated.m */,
+				42E7E029153E310F00852754 /* AMSerialPortList.h */,
+				42E7E02A153E310F00852754 /* AMSerialPortList.m */,
+				42E7E02B153E310F00852754 /* AMStandardEnumerator.h */,
+				42E7E02C153E310F00852754 /* AMStandardEnumerator.m */,
+			);
+			name = AMSerialPortClasses;
+			sourceTree = "<group>";
+		};
+		42E7E08415404BAE00852754 /* AsyncUdpSocketClasses */ = {
+			isa = PBXGroup;
+			children = (
+				42E7E08115404BA300852754 /* GCDAsyncUdpSocket.h */,
+				42E7E08215404BA300852754 /* GCDAsyncUdpSocket.m */,
+			);
+			name = AsyncUdpSocketClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42D8DF9F153E17E0005A9C64 /* serial2udp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D8DFD2153E17E0005A9C64 /* Build configuration list for PBXNativeTarget "serial2udp" */;
+			buildPhases = (
+				42D8DF9C153E17E0005A9C64 /* Sources */,
+				42D8DF9D153E17E0005A9C64 /* Frameworks */,
+				42D8DF9E153E17E0005A9C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = serial2udp;
+			productName = bt2udp;
+			productReference = 42D8DFA0153E17E0005A9C64 /* serial2udp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42D8DFC0153E17E0005A9C64 /* serial2udpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D8DFD5153E17E0005A9C64 /* Build configuration list for PBXNativeTarget "serial2udpTests" */;
+			buildPhases = (
+				42D8DFBC153E17E0005A9C64 /* Sources */,
+				42D8DFBD153E17E0005A9C64 /* Frameworks */,
+				42D8DFBE153E17E0005A9C64 /* Resources */,
+				42D8DFBF153E17E0005A9C64 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42D8DFC6153E17E0005A9C64 /* PBXTargetDependency */,
+			);
+			name = serial2udpTests;
+			productName = bt2udpTests;
+			productReference = 42D8DFC1153E17E0005A9C64 /* serial2udpTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42D8DF97153E17DF005A9C64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 42D8DF9A153E17DF005A9C64 /* Build configuration list for PBXProject "serial2udp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42D8DF95153E17DF005A9C64;
+			productRefGroup = 42D8DFA1153E17E0005A9C64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42D8DF9F153E17E0005A9C64 /* serial2udp */,
+				42D8DFC0153E17E0005A9C64 /* serial2udpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42D8DF9E153E17E0005A9C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D8DFAF153E17E0005A9C64 /* InfoPlist.strings in Resources */,
+				42D8DFB5153E17E0005A9C64 /* Credits.rtf in Resources */,
+				42D8DFBB153E17E0005A9C64 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D8DFBE153E17E0005A9C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D8DFCC153E17E0005A9C64 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42D8DFBF153E17E0005A9C64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42D8DF9C153E17E0005A9C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D8DFB1153E17E0005A9C64 /* main.m in Sources */,
+				42D8DFB8153E17E0005A9C64 /* AppDelegate.mm in Sources */,
+				42E7E02D153E310F00852754 /* AMSerialPort_Deprecated.m in Sources */,
+				42E7E02E153E310F00852754 /* AMSerialPort.m in Sources */,
+				42E7E02F153E310F00852754 /* AMSerialPortAdditions.m in Sources */,
+				42E7E030153E310F00852754 /* AMSerialPortList_Deprecated.m in Sources */,
+				42E7E031153E310F00852754 /* AMSerialPortList.m in Sources */,
+				42E7E032153E310F00852754 /* AMStandardEnumerator.m in Sources */,
+				42E7E08315404BA300852754 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D8DFBC153E17E0005A9C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D8DFCF153E17E0005A9C64 /* bt2udpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42D8DFC6153E17E0005A9C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D8DF9F153E17E0005A9C64 /* serial2udp */;
+			targetProxy = 42D8DFC5153E17E0005A9C64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42D8DFAD153E17E0005A9C64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D8DFAE153E17E0005A9C64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42D8DFB3153E17E0005A9C64 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D8DFB4153E17E0005A9C64 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		42D8DFB9153E17E0005A9C64 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D8DFBA153E17E0005A9C64 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		42D8DFCA153E17E0005A9C64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D8DFCB153E17E0005A9C64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42D8DFD0153E17E0005A9C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42D8DFD1153E17E0005A9C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42D8DFD3153E17E0005A9C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bt2udp/serial2udp-Prefix.pch";
+				INFOPLIST_FILE = "bt2udp/serial2udp-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = serial2udp;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42D8DFD4153E17E0005A9C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bt2udp/serial2udp-Prefix.pch";
+				INFOPLIST_FILE = "bt2udp/serial2udp-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = serial2udp;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42D8DFD6153E17E0005A9C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bt2udp.app/Contents/MacOS/bt2udp";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bt2udp/bt2udp-Prefix.pch";
+				INFOPLIST_FILE = "bt2udpTests/serial2udpTests-Info.plist";
+				PRODUCT_NAME = serial2udpTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		42D8DFD7153E17E0005A9C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bt2udp.app/Contents/MacOS/bt2udp";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bt2udp/bt2udp-Prefix.pch";
+				INFOPLIST_FILE = "bt2udpTests/serial2udpTests-Info.plist";
+				PRODUCT_NAME = serial2udpTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42D8DF9A153E17DF005A9C64 /* Build configuration list for PBXProject "serial2udp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D8DFD0153E17E0005A9C64 /* Debug */,
+				42D8DFD1153E17E0005A9C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42D8DFD2153E17E0005A9C64 /* Build configuration list for PBXNativeTarget "serial2udp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D8DFD3153E17E0005A9C64 /* Debug */,
+				42D8DFD4153E17E0005A9C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42D8DFD5153E17E0005A9C64 /* Build configuration list for PBXNativeTarget "serial2udpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D8DFD6153E17E0005A9C64 /* Debug */,
+				42D8DFD7153E17E0005A9C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42D8DF97153E17DF005A9C64 /* Project object */;
+}
